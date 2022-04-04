@@ -3,11 +3,30 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     background-image: url('../assets/img/triangles.png');
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+button {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
 }
