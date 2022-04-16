@@ -1,19 +1,18 @@
-.title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    color: black;
-}
-
 .introduction {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.introduction > h4 {
+    font-weight: 500;
+    color: #333;
+}
+
 .introduction > p {
     color: #8D8D8D;
+    width: 250px;
+    text-align: center;
 }
 
 .skip_btn {
@@ -23,7 +22,6 @@
     padding: 6px 18px;
     margin-top: 24px;
     border-radius: 12px;
-    transition: all .3s ease-in;
 }
 
 .skip_btn:hover {
@@ -38,7 +36,6 @@
 
 .right_icon > path {
     stroke: #00726E90;
-    transition: all .3s ease-in;
 }
 
 .skip_btn:hover > .right_icon > path {
