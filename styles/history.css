@@ -1,0 +1,156 @@
+.transactions {
+    padding: 0px 6px 0px 24px;
+
+    position: absolute;
+    bottom: 0px;
+    top: 30vh;
+    min-height: 70vh;
+}
+
+.transactions > .title {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: space-around;
+    color: #333;
+}
+
+.transactions > .title > span {
+    width: 40px;
+    height: 2px;
+    background-color: #d1d1d1;
+}
+
+.new_transaction_btn {
+    position: relative;
+    margin-top: -20px;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 42px;
+    margin-bottom: 24px;
+    width: 50%;
+}
+
+.filter_buttons {
+    display: flex;
+}
+
+.consumption_filter_btn,
+.replacement_filter_btn {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.consumption_filter_btn {
+    background-color: #EF7A7A20;
+    margin-right: 16px;
+}
+
+.replacement_filter_btn {
+    background-color: #33AFAA10;
+}
+
+.minus_icon {
+    width: 16px;
+}
+.plus_icon {
+    width: 18px;
+}
+
+.transactions_list {
+    overflow-y: scroll;
+}
+
+.transaction_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px;
+    padding: 16px 16px;
+    width: 65vw;
+    border-bottom: 1px solid #EAF3F1;
+}
+
+.hour_info,
+.date_info {
+    display: flex;
+}
+
+.hour_icon,
+.calendar_icon {
+    width: 18px;
+    fill: #d6d6d6;
+    margin-right: 12px;
+}
+
+.transaction_hour,
+.transaction_date {
+    color: #919191;
+    font-size: 14px;
+}
+
+.date_info {
+    margin-top: 12px;
+}
+
+.right_info {
+    text-align: right;
+}
+
+.item_name {
+    margin-right: 12px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.transaction_type {
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 6px;
+}
+
+.transaction_type > p {
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.type_down {
+    background-color: #EF7A7A20;
+    color: #EF7A7A;
+}
+
+.type_up {
+    background-color: #33AFAA10;
+    color: #33AFAA;
+}
+
+.arrow_down,
+.arrow_up {
+    width: 8px;
+}
+
+.arrow_down {
+    fill: #EF7A7A;
+}
+
+.arrow_up {
+    fill: #33AFAA;
+}
+
+@media (min-width: 460px) {
+    .transactions {
+        width: 360px;
+    }
+    .transaction_item {
+        width: 320px;
+    }
+}
